@@ -20,15 +20,15 @@ public class Tarefa {
         setConcluida(true);
     }
 
+    @Override
     public String toString(){
-        return "Tarefa" + descricao;
+        return  "Tarefa: " + descricao + "\n" +
+                "Data Criação: " + dataCadastro + "\n" +  
+                "Data Limite: " + dataLimite + "\n" +
+                "Concluída?: " + concluida + "\n";
+        
 
     }
-
-
-
-
-
 
     public int getId() {
         return this.id;
