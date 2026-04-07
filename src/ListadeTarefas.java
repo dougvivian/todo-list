@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.time.LocalDate;
+
 public class ListadeTarefas {
     private ArrayList<Tarefa> tarefas;
 
@@ -24,12 +26,13 @@ public class ListadeTarefas {
         }
     }
 
-    public ArrayList<Tarefa> getTarefas() {
-        return this.tarefas;
+    public void editarTarefa(Tarefa tarefa, String novaDescricao, LocalDate novaDataLimite) {
+        tarefa.setDescricao(novaDescricao);
+        tarefa.setDataLimite(novaDataLimite);
     }
 
-    public void setTarefas(ArrayList<Tarefa> tarefas) {
-        this.tarefas = tarefas;
+    public ArrayList<Tarefa> getTarefas() {
+        return this.tarefas;
     }
 
 }

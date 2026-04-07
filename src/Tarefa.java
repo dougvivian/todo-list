@@ -50,20 +50,12 @@ public class Tarefa {
         return this.concluida;
     }
 
-    public boolean getConcluida() {
-        return this.concluida;
-    }
-
     public void setConcluida(boolean concluida) {
         this.concluida = concluida;
     }
 
     public LocalDate getDataCadastro() {
         return this.dataCadastro;
-    }
-
-    public void setDataCadastro(LocalDate dataCadastro) {
-        this.dataCadastro = dataCadastro;
     }
 
     public LocalDate getDataLimite() {
