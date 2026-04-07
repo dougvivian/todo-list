@@ -10,6 +10,7 @@ A ideia é evoluir o projeto para uso real no dia a dia, adicionando interface g
 - Listar todas as tarefas cadastradas
 - Concluir tarefa
 - Remover tarefa
+- Editar descrição e prazo de uma tarefa existente
 
 ## Tecnologias utilizadas
 
