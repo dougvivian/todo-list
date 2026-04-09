@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.time.LocalDate;
+import java.io.IOException;
 
 public class App {
     private ListadeTarefas lista;
@@ -8,6 +9,7 @@ public class App {
     public App() {
         this.lista = new ListadeTarefas();
         this.scanner = new Scanner(System.in);
+        try { this.lista.carregarTarefas(); } catch (IOException e) { System.out.println("Erro ao carregar: " + e.getMessage()); }
     }
 
     public void iniciar() {
@@ -30,7 +32,10 @@ public class App {
                 case 3: concluirTarefa(); break;
                 case 4: removerTarefa(); break;
                 case 5: editarTarefa(); break;
-                case 6: System.out.println("Saindo..."); break;
+                case 6:
+                    try { lista.salvarTarefas(); } catch (Exception e) { System.out.println("Erro ao salvar: " + e.getMessage()); }
+                    System.out.println("Saindo...");
+                    break;
                 default: System.out.println("Opção inválida!");
             }
         }

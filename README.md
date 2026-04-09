@@ -11,12 +11,14 @@ A ideia é evoluir o projeto para uso real no dia a dia, adicionando interface g
 - Concluir tarefa
 - Remover tarefa
 - Editar descrição e prazo de uma tarefa existente
+- Persistência em arquivo — tarefas são salvas ao sair e carregadas ao abrir
 
 ## Tecnologias utilizadas
 
 - Java
 - `LocalDate` para manipulação de datas
 - `ArrayList` para gerenciamento da coleção de tarefas
+- `BufferedWriter` / `BufferedReader` para persistência em arquivo
 
 ## Como rodar
 
@@ -41,6 +43,7 @@ src/
 
 ## Próximos passos
 
+- [x] Persistência em arquivo
+- [ ] Banco de dados
 - [ ] Interface gráfica (front end)
-- [ ] Banco de dados para persistência das tarefas
 - [ ] Suporte multiusuário
