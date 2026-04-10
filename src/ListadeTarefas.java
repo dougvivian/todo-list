@@ -57,6 +57,11 @@ public class ListadeTarefas {
     }
 
     public void listarTarefas(){
+        if (tarefas.isEmpty()) {
+            System.out.println("Nenhuma tarefa cadastrada.");
+            return;
+        }
+
         for(Tarefa t : tarefas){
             System.out.println(t);
         }
