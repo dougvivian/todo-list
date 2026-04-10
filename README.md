@@ -43,7 +43,10 @@ src/
 
 ## Próximos passos
 
-- [x] Persistência em arquivo
 - [ ] Banco de dados
 - [ ] Interface gráfica (front end)
 - [ ] Suporte multiusuário
+
+## Autor
+Douglas Vivian — estudante de Engenharia de Software na PUCRS  
+[LinkedIn](https://linkedin.com/in/douglasbvivian) · [GitHub](https://github.com/dougvivian)
